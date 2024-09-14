@@ -1,0 +1,2 @@
+Affichez la liste des 10 derniers books sur la route par défaut.
+Un clic sur un book amène vers le détail de ce book

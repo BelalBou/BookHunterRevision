@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Catalog</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100 text-gray-900">
+    <!-- Header -->
+    <header class="bg-blue-600 text-white p-4 shadow-md">
+      <div class="container mx-auto flex justify-between items-center">
+        <h1 class="text-2xl font-bold">Book Catalog</h1>
+        <nav>
+          <ul class="flex space-x-4">
+            <li><a href="#" class="hover:text-gray-200">Home</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto mt-8 p-4">
+      <h2 class="text-xl font-semibold mb-4">Latest Books</h2>
+      <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <!-- Book 1 -->
+        <li
+          class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow"
+        >
+          <a href="book-details.html?id=1" class="block">
+            <h3 class="text-lg font-bold mb-2">Book Title 1</h3>
+            <p class="text-gray-700">Published: 2023</p>
+          </a>
+        </li>
+
+        <!-- Book 2 -->
+        <li
+          class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow"
+        >
+          <a href="book-details.html?id=2" class="block">
+            <h3 class="text-lg font-bold mb-2">Book Title 2</h3>
+            <p class="text-gray-700">Published: 2022</p>
+          </a>
+        </li>
+
+        <!-- Add more books up to 10 -->
+      </ul>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-blue-600 text-white p-4 mt-8">
+      <div class="container mx-auto text-center">
+        <p>&copy; 2024 Book Catalog. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
