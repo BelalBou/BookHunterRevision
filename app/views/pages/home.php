@@ -14,6 +14,7 @@
             class="w-full h-auto rounded-lg shadow-lg"
           />
         </div>
+        <p class="text-gray-700"><?php echo \Core\Helpers\truncate($book['resume']); ?>
         <p class="text-gray-700">Published: <?php echo $book['publicated_at']; ?></p>
         </a>
     </li>
@@ -36,7 +37,8 @@
             class="w-full h-auto rounded-lg shadow-lg"
           />
         </div>
-        <p class="text-gray-700">Published: <?php echo $author['biography']; ?></p>
+        <p class="text-gray-700">bio: <?php echo $author['biography']; ?></p>
+        <p class="text-gray-700">Published: <?php echo $author['created_at']; ?></p>
         </a>
     </li>
 <?php endforeach;?>
