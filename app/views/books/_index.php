@@ -4,7 +4,8 @@
     <li
         class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow"
     >
-        <a href="book-details.html?id=1" class="block">
+        <a href="?books=show&id=<?php echo $book['bookID']; ?>" class="block">
+
         <h3 class="text-lg font-bold mb-2">Book <?php echo $book['title']; ?></h3>
         <div class="md:w-1/3 mb-4 md:mb-0">
           <img

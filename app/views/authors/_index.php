@@ -1,10 +1,10 @@
 <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-<!-- Book 1 -->
+<!-- author 1 -->
 <?php foreach ($authors as $author): ?>
     <li
         class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow"
     >
-        <a href="book-details.html?id=1" class="block">
+        <a href="?authors=show&id=<?php echo $author['id']; ?>" class="block">
         <h3 class="text-lg font-bold mb-2">Author <?php echo $author['firstname']; ?></h3>
         <div class="md:w-1/3 mb-4 md:mb-0">
           <img

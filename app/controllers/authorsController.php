@@ -16,3 +16,17 @@ function indexAction(PDO $connexion) {
     include '../app/views/authors/index.php';
     $content= ob_get_clean();
 }
+
+
+function showAction(PDO $connexion,int $id){
+    include_once '../app/models/authorsModel.php';
+    $author = \App\Models\AuthorsModel\findOneByID($connexion,$id);
+
+    global $content,$title;
+    $title = $author['firstname'];
+    ob_start();
+    
+    include '../app/views/authors/show.php';
+    $content = ob_get_clean();
+
+} 

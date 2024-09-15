@@ -3,16 +3,17 @@
 // router principal
 
 // route des books
-//Pattern: ?photos
+//Pattern: ?books
 //ctrl: booksControllers
 //action:indexAction
-if(isset($_GET['books'])) :
-include_once '../app/controllers/booksController.php';
-\App\Controllers\BooksController\indexAction($connexion);
 
+if(isset($_GET['books'])) :
+include_once '../app/routers/books.php';
+
+// route des authors
+//Pattern: ?authors
 elseif(isset($_GET['authors'])):
-include_once '../app/controllers/authorsController.php';
-\App\Controllers\authorsController\indexAction($connexion);
+include_once '../app/routers/authors.php';
 
 
 // route par défaut
