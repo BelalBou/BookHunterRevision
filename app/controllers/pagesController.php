@@ -8,11 +8,11 @@ use \PDO;
 function homeAction(PDO $connexion) {
     // Je demande des données aux modèles
     include_once '../app/models/booksModel.php';
-    $books = \App\Models\BooksModel\findAll($connexion);
+    $books = \App\Models\BooksModel\findAll($connexion,4);
 
         // Je demande des données aux modèles
     include_once '../app/models/authorsModel.php';
-    $authors = \App\Models\AuthorsModel\findAll($connexion);
+    $authors = \App\Models\AuthorsModel\findAll($connexion,4);
 
     //Je charge la vue 'HOME' dans $ content
     global $content,$title;

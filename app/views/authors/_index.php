@@ -8,7 +8,7 @@
         <h3 class="text-lg font-bold mb-2">Author <?php echo $author['firstname']; ?></h3>
         <div class="md:w-1/3 mb-4 md:mb-0">
           <img
-            src="<?php echo $author['picture']; ?>"
+            src="https://picsum.photos/300/300"
             alt="author picture"
             class="w-full h-auto rounded-lg shadow-lg"
           />

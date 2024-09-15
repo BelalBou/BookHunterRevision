@@ -6,7 +6,7 @@ use \PDO;
 
 function indexAction(PDO $connexion) {
     include_once '../app/models/authorsModel.php';
-    $authors = \App\Models\AuthorsModel\findAll($connexion);
+    $authors = \App\Models\AuthorsModel\findAll($connexion,10);
 
     //Je charge la vue 'HOME' dans $ content
     global $content,$title;
