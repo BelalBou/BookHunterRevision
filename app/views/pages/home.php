@@ -16,6 +16,9 @@
         </div>
         <p class="text-gray-700"><?php echo \Core\Helpers\truncate($book['resume']); ?>
         <p class="text-gray-700">Published: <?php echo $book['publicated_at']; ?></p>
+        <p class="text-gray-700">Author: 
+        <?php echo $book['firstname']; ?>, 
+        <?php echo $book['lastname']; ?></p>
         </a>
     </li>
 <?php endforeach;?>
